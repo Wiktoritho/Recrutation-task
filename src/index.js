@@ -16,7 +16,7 @@ function createDataFromObject() {
     description[i].innerHTML = offers[i].name;
     price[i].innerHTML = offers[i].currency + " " + offers[i].price;
     discount[i].innerHTML = offers[i].ribbon;
-    image[i].setAttribute("src", `../images/${offers[i].image}`);
+    image[i].setAttribute("src", `./images/${offers[i].image}`);
   }
 }
 

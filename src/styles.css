@@ -1,0 +1,123 @@
+html {
+  background-color: white;
+}
+body {
+  font-family: "Roboto";
+  font-weight: 600;
+  margin: 0 auto;
+  max-width: 300px;
+  border-radius: 5px;
+  background-color: rgb(233, 233, 233);
+}
+img {
+  height: 167px;
+  width: 244px;
+}
+.logo {
+  font-weight: 600;
+  font-size: 29px;
+  display: flex;
+  justify-content: center;
+  padding: 31px 0px 27px 0px;
+  line-height: 1;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+}
+.container__box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 244px;
+}
+.container__description {
+  margin: 8px 0px 21px 0px;
+  font-size: 11px;
+  line-height: 1;
+}
+.container__price {
+  margin: 0px 0px 17px 0px;
+  font-size: 14px;
+  line-height: 1;
+}
+.list {
+  padding: 10px 0;
+  margin: 0;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+.list__dot {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  background-color: rgb(187, 187, 187);
+  border-radius: 50%;
+  border: 1px rgb(187, 187, 187) solid;
+  cursor: pointer;
+}
+.active {
+  background-color: #239f61;;
+  border: 1px #239f61 solid;
+}
+.container__discount {
+  position: absolute;
+  height: 18px;
+  width: 36px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #239f61;
+  color: white;
+  margin: 218px 0px 0px 210px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-weight: 400;
+}
+.container__button {
+  position: absolute;
+  margin-top: 62px;
+  height: 40px;
+  width: 116px;
+  background-color: #239f61;;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: none;
+}
+.none {
+  display: none;
+}
+.arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 318px;
+  margin-left: 276px;
+  border-radius: 50%;
+}
+.changed {
+  transform: rotate(180deg);
+  margin-left: 5px;
+}
+.arrow:hover {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

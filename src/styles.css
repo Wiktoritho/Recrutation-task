@@ -5,13 +5,15 @@ body {
   font-family: "Roboto";
   font-weight: 600;
   margin: 0 auto;
+  min-width: 150px;
   max-width: 300px;
+  width: 80%;
   border-radius: 5px;
   background-color: rgb(233, 233, 233);
 }
 img {
-  height: 167px;
-  width: 244px;
+  height: 100%;
+  width: 100%;
 }
 .logo {
   font-weight: 600;
@@ -28,16 +30,21 @@ img {
   gap: 9px;
 }
 .container__box {
+  position: relative;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 244px;
+  width: 90%;
+  max-width: 244px;
+  height: 237px;
+  border-radius: 5px;
 }
 .container__description {
   margin: 8px 0px 21px 0px;
   font-size: 11px;
   line-height: 1;
+  text-align: center;
 }
 .container__price {
   margin: 0px 0px 17px 0px;
@@ -74,7 +81,8 @@ img {
   align-items: center;
   background-color: #239f61;
   color: white;
-  margin: 220px 0px 0px 209px;
+  bottom: 0px;
+  right: 0px;
   border-top-left-radius: 8px;
   border-bottom-right-radius: 8px;
   font-weight: 400;
@@ -93,31 +101,20 @@ img {
 .none {
   display: none;
 }
-.arrow {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 318px;
-  margin-left: 276px;
-  border-radius: 50%;
-}
-.changed {
-  transform: rotate(180deg);
-  margin-left: 5px;
-}
-.arrow:hover {
+
+.container__box:hover .container__button {
+  display: block;
   cursor: pointer;
-  transition: 0.5s;
 }
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+
+.container__box:hover .container__image{
+  filter: brightness(50%);
 }
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+
+.active__image{
+  filter: brightness(50%);
+}
+
+.active__button{
+  display: block;
 }
